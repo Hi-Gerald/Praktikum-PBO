@@ -10,7 +10,7 @@ class Employee extends Person {
         System.out.println("Salary: " + salary);
     }
     
-    // menampilkan metode untuk menampilkan employee karena di main ada emp.display
+    // menampilkan metode untuk menampilkan employee karena di main ada emp.displayAll()
     public void displayAll() {
         display();
         showSalary();
