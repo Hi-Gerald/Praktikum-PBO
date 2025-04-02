@@ -4,7 +4,7 @@ import com.university.model.Student;
 
 public class MainApp {
     public static void main(String[] args) {
-        //buat dummy data untuk array of object berisi 5 data
+        //buat dummy data untuk array of object berisi 5 data\
         Student[] students = new Student[5];
         students[0] = new Student("105223001", "Alicia", 20, 3.8);
         students[1] = new Student("105223002", "Gerald", 22, 3.6);
