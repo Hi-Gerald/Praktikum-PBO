@@ -7,9 +7,9 @@ public class Main {
         
         Perpustakaan perpustakaan = new Perpustakaan();
 
-        Buku buku1 = new Buku("Pemrograman Java", "John Doe", 2020);
-        Buku buku2 = new Buku("Struktur Data", "Jane Smith", 2019);
-        Buku buku3 = new Buku("Algoritma", "Bob Johnson", 2021);
+        Buku buku1 = new Buku("Pemrograman Java", "Farrell Silimalar", 2020);
+        Buku buku2 = new Buku("Struktur Data", "D'Stevanio", 2019);
+        Buku buku3 = new Buku("Algoritma", "Gerald Gans", 2021);
 
         perpustakaan.tambahBuku(buku1);
         perpustakaan.tambahBuku(buku2);
@@ -17,7 +17,7 @@ public class Main {
 
         perpustakaan.tampilkanBuku();
 
-        User user1 = new User("Alice", "USR001");
+        User user1 = new User("Alicia", "USR001");
         
         user1.pinjamBuku(buku1);
         user1.pinjamBuku(buku1); 

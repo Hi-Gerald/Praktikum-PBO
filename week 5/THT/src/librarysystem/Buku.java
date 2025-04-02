@@ -15,7 +15,6 @@ public class Buku {
         jumlahBukuTersedia++;
     }
 
-    // Getters
     public String getJudul() {
         return judul;
     }
@@ -36,7 +35,6 @@ public class Buku {
         return jumlahBukuTersedia;
     }
 
-    // Setters
     public void setJudul(String judul) {
         this.judul = judul;
     }
