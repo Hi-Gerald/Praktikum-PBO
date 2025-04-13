@@ -1,3 +1,4 @@
+package kursusonline;
 import kursusonline.model.*;
 import kursusonline.service.KursusService;
 
@@ -26,7 +27,7 @@ public class Main {
         service.tambahKursus(kursus2);
 
         kursus1.tambahMateri(materi1);
-        kursus1.tambahMateri(materi2);
+        kursus2.tambahMateri(materi2);
         kursus2.tambahMateri(materi3);
 
         service.tambahPesertaKeKursus("CS1", peserta1);
