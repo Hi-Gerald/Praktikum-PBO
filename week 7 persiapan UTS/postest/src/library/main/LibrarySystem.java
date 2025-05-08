@@ -56,7 +56,7 @@ public class LibrarySystem {
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1 -> {
