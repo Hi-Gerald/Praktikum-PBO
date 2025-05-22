@@ -1,5 +1,4 @@
-// EWallet.java
-class EWallet extends PaymentMethod {
+public class EWallet extends PaymentMethod {
     @Override
     public void processPayment(double amount) {
         System.out.println("Processing e-wallet payment of " + amount + " IDR");
