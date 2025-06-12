@@ -1,14 +1,12 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-// Custom exception untuk ID buku yang tidak valid
 class InvalidBookIdException extends Exception {
     public InvalidBookIdException(String message) {
         super(message);
     }
 }
 
-// Custom exception untuk durasi peminjaman yang tidak valid
 class InvalidLoanDurationException extends Exception {
     public InvalidLoanDurationException(String message) {
         super(message);
@@ -16,7 +14,6 @@ class InvalidLoanDurationException extends Exception {
 }
 
 public class Main {
-    // Metode untuk memproses dan memvalidasi input
     public static void validateAndProcess(Scanner scanner) throws InvalidBookIdException, InvalidLoanDurationException {
         System.out.println("Masukkan nama peminjam:");
         String name = scanner.nextLine();
@@ -25,17 +22,13 @@ public class Main {
         System.out.println("Masukkan lama peminjaman (hari):");
         int loanDuration = scanner.nextInt();
 
-        // Validasi ID buku
         if (!bookId.equals("B001") && !bookId.equals("B002")) {
             throw new InvalidBookIdException("ID Buku tidak valid!");
         }
 
-        // Validasi durasi peminjaman
         if (loanDuration < 1 || loanDuration > 14) {
             throw new InvalidLoanDurationException("Lama peminjaman harus antara 1 - 14 hari.");
         }
-
-        // Jika semua valid, cetak pesan sukses
         System.out.println("Peminjaman berhasil. Nama: " + name + ", ID Buku: " + bookId + ", Lama: " + loanDuration + " hari.");
     }
 
